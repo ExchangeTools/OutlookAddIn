@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {02AE975F-6795-463E-BED8-6FFC1B74D958} = s 'MapiFolderWrp Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{24043FC4-3E9C-48BD-9563-3C76960C2073}'
+			Version = s '1.0'
+		}
+	}
+}

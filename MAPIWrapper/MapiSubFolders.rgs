@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {8CD1E521-F1E1-49A2-A31B-89E410B7BDBA} = s 'MapiSubFolders Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{24043FC4-3E9C-48BD-9563-3C76960C2073}'
+			Version = s '1.0'
+		}
+	}
+}

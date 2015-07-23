@@ -1,0 +1,71 @@
+// MAPIWrapper.idl : IDL source for MAPIWrapper
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (MAPIWrapper.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+interface IMapiSubFolders;
+
+//************************************************************************
+[
+	object,
+	uuid(92BCCF25-803C-4312-8959-AA586612A218),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IMapiFolderWrp : IDispatch{
+	[id(1)] HRESULT GetAllSubFolders([in] VARIANT mapiObject, [out,retval] IMapiSubFolders ** ppSubFolders);
+	[id(2)] HRESULT MoveTo([in] VARIANT session);
+};
+
+//************************************************************************
+
+[
+	object,
+	uuid(B27D2DC8-FEF4-4F07-BA6B-9E423BC2657D),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IMapiSubFolders : IDispatch{
+	[id(1)] HRESULT GetNextItem([out] BSTR* DisplayName);
+	[propget, id(2)] HRESULT Count([out, retval] ULONG* pVal);
+};
+
+//************************************************************************
+
+[
+	uuid(24043FC4-3E9C-48BD-9563-3C76960C2073),
+	version(1.0),
+]
+library MAPIWrapperLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(D88741BD-32E9-4747-8664-87218C302B87)		
+	]
+	dispinterface _IMapiFolderWrpEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(02AE975F-6795-463E-BED8-6FFC1B74D958)		
+	]
+	coclass MapiFolderWrp
+	{
+		[default] interface IMapiFolderWrp;
+		[default, source] dispinterface _IMapiFolderWrpEvents;
+	};
+	[
+		uuid(8CD1E521-F1E1-49A2-A31B-89E410B7BDBA)		
+	]
+	coclass MapiSubFolders
+	{
+		[default] interface IMapiSubFolders;
+	};
+};
+

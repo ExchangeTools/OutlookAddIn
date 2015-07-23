@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{97181bd1-ade3-4652-a4a9-ffa1f3079271}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Errors">
+      <UniqueIdentifier>{1af23985-a7c9-44f1-bfb1-a9a214c0ccec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{8cb8d759-8034-4d03-a7c4-c9b0ec1b970a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SmartPointers">
+      <UniqueIdentifier>{3b9ca411-716b-49cb-80ad-928b247fc0e9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MAPIWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MAPIWrapper_i.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapiFolderWrp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapiSubFolders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Errors\BaseException.cpp">
+      <Filter>Errors</Filter>
+    </ClCompile>
+    <ClCompile Include="Errors\MapiException.cpp">
+      <Filter>Errors</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\FileHelper.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Errors\EventLogReporter.cpp">
+      <Filter>Errors</Filter>
+    </ClCompile>
+    <ClCompile Include="MapiSessionWrp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Errors\ComException.cpp">
+      <Filter>Errors</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MAPIWrapper_i.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_IMapiFolderWrpEvents_CP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapiFolderWrp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapiSubFolders.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Errors\BaseException.h">
+      <Filter>Errors</Filter>
+    </ClInclude>
+    <ClInclude Include="Errors\MapiException.h">
+      <Filter>Errors</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\FileHelper.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Errors\errors.hpp">
+      <Filter>Errors</Filter>
+    </ClInclude>
+    <ClInclude Include="Errors\CppException.hpp">
+      <Filter>Errors</Filter>
+    </ClInclude>
+    <ClInclude Include="Errors\EventLogReporter.h">
+      <Filter>Errors</Filter>
+    </ClInclude>
+    <ClInclude Include="ToDoList.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\arithmetic.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Errors\checks.h">
+      <Filter>Errors</Filter>
+    </ClInclude>
+    <ClInclude Include="MapiSessionWrp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Errors\ComException.h">
+      <Filter>Errors</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\StringHelper.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartPointers\MapiSmartPtr.h">
+      <Filter>SmartPointers</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartPointers\SmartPtr.hpp">
+      <Filter>SmartPointers</Filter>
+    </ClInclude>
+    <ClInclude Include="EdkMdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EdkGuid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartPointers\BinaryHelper.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MAPIWrapper.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MAPIWrapper.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="MAPIWrapper.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="MapiFolderWrp.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="MapiSubFolders.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="MAPIWrapper.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>
